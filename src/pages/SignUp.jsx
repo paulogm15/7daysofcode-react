@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
 import classNames from "classnames";
 import { useForm } from "react-hook-form";
@@ -58,6 +58,11 @@ export const SignUp = () => {
             {errors.email?.type === "required" ? (
               <span className="text-xs text-red-500 pl-1">
                 Email é obrigatório!
+              </span>
+            ) : null}
+            {errors.email?.type === "minLength" ? (
+              <span className="text-xs text-red-500 pl-1">
+                O email precisa ter pelo menos cinco caracteres
               </span>
             ) : null}
           </div>

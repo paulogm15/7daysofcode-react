@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { App } from "../layouts/App";
 
 export const SignUp = () => {
-  console.log("signup page");
   const {
     register,
     handleSubmit,

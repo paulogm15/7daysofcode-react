@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { App } from "../layouts/App";
 
 export const SignIn = () => {
-  console.log("signup page");
   const {
     register,
     handleSubmit,
@@ -120,4 +119,3 @@ export const SignIn = () => {
     </App>
   );
 };
-

@@ -16,10 +16,10 @@ export const Home = () => {
 
   return (
     <App>
-      <div id="screen" className="bg-gray-100 min-h-screen w-screen h-screen">
+      <div id="screen" className="relative bg-gray-100 min-h-screen w-screen">
         <div
           id="header"
-          className="flex justify-between px-5 py-2 border-b bg-white"
+          className="flex justify-between px-5 py-2 border-b bg-white flex-grow"
         >
           <span className="font-sans text-lg text-sky-500 lowercase">
             Aluritter
@@ -78,8 +78,9 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <Link to="/signup">Ir para o SignUp </Link>
-        <div className="container mx-full px-4 text-center bg-gray-900 text-white">
+        <div className="fixed bottom-0 left-0 w-full px-4 text-center bg-gray-800 text-white">
+          <Link to="/signup">Ir para o SignUp </Link>
+          <br />
           <a
             target="_blank"
             href="https://icons8.com/icon/437/twitter"
